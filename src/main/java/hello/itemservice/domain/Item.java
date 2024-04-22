@@ -2,9 +2,14 @@ package hello.itemservice.domain;
 
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 @Data
 public class Item {
 
+    @Id
     private Long id;
 
     private String itemName;
